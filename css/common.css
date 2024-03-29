@@ -114,3 +114,11 @@ ul#categories ul {
   margin-bottom: 0px;
 }
 /* task-2 end*/
+
+
+
+/* task-3 start*/
+input::placeholder{
+  color: #2e2f42;
+}
+/* task-3 end*/
