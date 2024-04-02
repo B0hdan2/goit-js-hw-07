@@ -26,15 +26,15 @@ const renderDiv = (event) => {
   // дістаю значення input
   const value = parseInt(input.value);
 
-  // додаю стилі для divBoxes
-  divBoxes.style.cssText = `
-    padding: 32px;
-    border-radius: 8px;
-  `;
-
   if (value >= parseInt(input.min) && value <= parseInt(input.max)) {
     // видаляю старі div
     divBoxes.innerHTML = "";
+
+    // додаю стилі для divBoxes
+    divBoxes.style.cssText = `
+    padding: 32px;
+    border-radius: 8px;
+  `;
 
     // створюю div
     let width = 30;
