@@ -166,6 +166,9 @@ ul#categories ul {
 }
 
 #boxes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   min-width: 486px;
   text-align: center;
   background-color:  #f6f6fe;
@@ -184,3 +187,5 @@ ul#categories ul {
 .button-red:focus{
   background-color:  #ff7070;;
 }
+
+
