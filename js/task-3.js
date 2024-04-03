@@ -10,11 +10,6 @@ const titleWithGreetings = document.querySelector("#name-output");
 const looksAtTheText = (event) => {
   const inputValue = event.target.value.trim();
 
-  if (inputValue !== "") {
-    return (titleWithGreetings.textContent = inputValue);
-  } else {
-    return (titleWithGreetings.textContent = "Anonymous");
-  }
+  titleWithGreetings.textContent = inputValue || "Anonymous";
 };
-
 listeningForInput.addEventListener("input", looksAtTheText);
